@@ -527,6 +527,18 @@ footer {
 
 @media (max-width: 600px) {
 
+    .none{
+        display: none;
+    }
+
+    .card-cont{
+        padding: 0px 30px;
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+
     .navbar {
         padding: 23px 22px;
     }
@@ -640,7 +652,7 @@ footer {
     }
 
     .heading h2 {
-        font-size: 18px;
+        font-size: 8vw;
     }
 
     .quote-para p {
