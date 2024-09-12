@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://www.iit.edu/themes/iit/assets/favicons/favicon.ico?v=2" type="image/x-icon">
+    <title>Publications | Syed Ather Ali Official</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+       *::-webkit-scrollbar {
+            width: 2px;
+            background-color: black;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: lightseagreen;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-family: "Poppins", sans-serif;
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .separation {
+            height: 3px;
+            position: relative;
+            background-color: rgb(46, 44, 44);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 76px;
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding-bottom: 0;
+        }
+
+        .brand-title img {
+            width: 5vw;
+            color: white;
+            background-color: #ffffffab;
+            border-radius: 100px;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        .navbar-links ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar-links li {
+            margin-left: 20px;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+            font-size: 1.3vw;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .navbar-links a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        .toggle-button {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+
+        .toggle-button .bar {
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        footer {
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 70px;
+            border-top: 1px solid #34373c;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 250px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .footer-section p,
+        .footer-section ul,
+        .footer-section li {
+            list-style: none;
+            color: rgb(178 183 183);
+            font-size: 13px;
+            margin-top: 17px;
+            padding: 0;
+        }
+
+        .footer-section ul {
+            margin-top: 10px;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: rgb(178 183 183);
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .terms {
+            margin-top: 20px;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .social-icons a img {
+            border-radius: 32px;
+            width: 51px;
+            padding: 9px 10px;
+        }
+
+        .social-icons a img:hover {
+            background-color: #22222280;
+            transition: all 0.2s;
+        }
+
+        .last-cont {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 12px;
+            border-top: 1px solid rgba(128, 128, 128, 0.591);
+            padding-top: 15px;
+        }
+
+        .last-cont h4 {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgb(178 183 183);
+        }
+
+        .logo img {
+            width: 74px;
+            background-color: ghostwhite;
+            border-radius: 89px;
+            padding: b;
+            padding: 0px 0px;
+            border: 2px solid #22136b;
+        }
+
+        .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 0px;
+            border-radius: 10px;
+            /* margin: 30px auto; */
+            width: 100%;
+            /* max-width: 649px; */
+        }
+
+        .contact-section img {
+            width: 25vw;
+        }
+
+        .contact-section h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px 0px;
+            margin: 10px 0;
+            font-size: 1em;
+            font-family: "Poppins", sans-serif;
+            color: white;
+            resize: none;
+            background: none;
+            border: none;
+            border-bottom: 1px solid grey;
+            border-radius: 0;
+            text-transform: lowercase;
+            font-weight: 300;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-bottom: 1px solid lightseagreen;
+            outline: none;
+            transition: all 0.6s;
+        }
+
+        .contact-form input[type="submit"] {
+            display: inline-block;
+            padding: 15px 20px;
+            background-color: #24cfa6;
+            color: black;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 162px;
+            border-radius: 30px;
+            margin: 20px 0px;
+            width: inherit;
+            font-family: "Poppins", sans-serif;
+            text-transform: capitalize;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            transition: all 0.3s;
+            background: #24cfa6;
+            color: whitesmoke;
+            box-shadow: 0 0 5px #24cfa6, 0 0 36px #24cfa6, 0 0 50px #24cfa6, 0 0 100px #24cfa6;
+        }
+
+        .div1 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4%;
+        }
+
+        .div2 {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 60px;
+        }
+
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: 0.3s;
+            width: 50px;
+            background: transparent;
+        }
+
+        #scrollTopBtn i {
+            color: gray;
+            font-size: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        #scrollTopBtn i:hover {
+            background: rgba(57, 56, 56, 0.347);
+
+        }
+
+        @media (min-width: 1700px) {
+            .main {
+                max-width: 80%;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .none {
+                display: none;
+            }
+
+            .navbar {
+                padding: 23px 22px;
+            }
+
+            .navbar-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                padding: 20px 0;
+                transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+                box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.3);
+            }
+
+            .navbar-links ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar-links ul li {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .navbar-links a {
+                padding: 10px 20px;
+                color: white;
+                font-weight: 100;
+                text-transform: uppercase;
+                font-size: 4.1vw;
+                font-weight: 500;
+            }
+
+            .navbar-links a:hover {
+                color: lightseagreen;
+                border-radius: 5px;
+            }
+
+            .toggle-button {
+                display: flex;
+                width: 25px;
+                height: 15px;
+            }
+
+            .navbar-links.open {
+                display: flex;
+                max-height: 500px;
+                border-radius: 16px;
+                background: linear-gradient(to right, rgb(18 58 49), black, rgb(18 58 49));
+                opacity: 1;
+                margin-top: 20px;
+            }
+
+            .brand-title img {
+                margin: -7px;
+                width: 14vw;
+                color: white;
+            }
+
+            .last-cont {
+                justify-content: center;
+                margin: 4px 12px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar {
+                padding: 23px 22px;
+            }
+
+            .navbar-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                padding: 20px 0;
+                transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+            }
+
+            .navbar-links ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar-links ul li {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .navbar-links a {
+                font-size: 4.1vw;
+            }
+
+            .div1{
+                width: 100%;
+            }
+
+            .div1 h2{
+                width: 100vw;
+                font-size: 30px;
+                padding: 4px;
+            }
+
+            .contact-section{
+                padding: 6%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav class="navbar">
+            <div class="brand-title"><img src="assets/logo.png" alt="Logo">
+            </div>
+            <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links" id="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="cont.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="contact-section">
+            <div class="div1">
+                <h2>Connect with your Teacher.</h2>
+                <form class="contact-form">
+                    <input type="text" spellcheck="false" autocomplete="off" name="name" placeholder="Your Name" required>
+                    <input type="email" spellcheck="false" autocomplete="off" name="email" placeholder="Your Email" required>
+                    <textarea name="message" spellcheck="false" autocomplete="off" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="div2 none">
+                <img src="assets/contact2.png">
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section ">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Logo">
+                    </div>
+                    <p>
+                        Join Syed Ather Ali Official for an unparalleled educational experience. Our channel provides
+                        comprehensive content for classes 9 to 12, ECAT, and MDCAT, ensuring you grasp both classic and
+                        modern concepts. With dedicated tutorials and expert guidance, Syed Ather Ali Official has
+                        become
+                        the ultimate learning destination. From mastering exam techniques to deep dives into complex
+                        topics,
+                        this is where academic excellence is achieved.
+                    </p>
+
+                    <ul class="terms">
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section links">
+                    <h2>Site Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li id="contact"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li>+92 300 925 37 65 (personal)</li>
+                        <li><a href="syedatherali.edu.pk">syedatherali@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section follow">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ProfAtharCoachingCentre/" target="_blank"><img
+                                src="assets/fb.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/syedatherali_official?igsh=aWQ4M2NvcjAzdGpq"
+                            target="_blank"><img src="assets/insta.svg" alt="Instagram"></a>
+                        <a href="https://www.youtube.com/@SyedAtherAliOfficial/videos" target="_blank"><img
+                                src="assets/yt-footer.svg" alt="Youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="last-cont">
+                <h4>&copy; Syed Ather Ali Official </h4>
+                <h4>Making Education simply accessible!</h4>
+            </div>
+        </footer>
+    </div>
+    <button onclick="scrollToTop()" id="scrollTopBtn"><i class="ri-arrow-up-double-line"></i></button>
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+    <script>
+        function toggleMenu() {
+            var navbarLinks = document.getElementById("navbar-links");
+            if (navbarLinks.classList.contains("open")) {
+                navbarLinks.classList.remove("open");
+            } else {
+                navbarLinks.classList.add("open");
+            }
+        }
+    </script>
+</body>
+
+</html>
