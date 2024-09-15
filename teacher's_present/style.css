@@ -522,6 +522,16 @@ footer {
         max-width: 80%;
         margin: auto;
     }
+
+    .left{
+        width: 70%;
+    }
+
+    .quote-para{
+    font-size: 28px;
+    }
+
+    
 }
 
 
@@ -657,6 +667,7 @@ footer {
 
     .quote-para p {
         font-size: 14px;
+        text-align: center;
     }
 
     .quote-para p span img {
