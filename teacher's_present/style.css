@@ -535,6 +535,10 @@ footer {
     .navbar-links a {
     font-size: 20px;
     }
+
+    .navbar {
+    padding: 25px 265px;  
+    }
   
  
 }
