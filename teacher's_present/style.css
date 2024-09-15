@@ -524,15 +524,19 @@ footer {
         margin: auto;
     }
 
-    .left{
+    .left {
         width: 70%;
     }
 
-    .quote-para{
+    .quote-para {
     font-size: 28px;
     }
 
-    
+    .navbar-links a {
+    font-size: 20px;
+    }
+  
+ 
 }
 
 
